@@ -76,3 +76,46 @@ AttributeError: module 'bcrypt' has no attribute '__about__'
 2025-07-29 17:17:43,464 - WARNING - Duplicate registration attempt: venky@gmail.com or 7437542301
 2025-07-29 17:20:46,486 - INFO - Received registration request for vamsi@gmail.com,7437542301
 2025-07-29 17:20:46,538 - WARNING - Duplicate registration attempt: vamsi@gmail.com or 7437542301
+2025-07-29 19:51:27,913 - WARNING - Login failed: your_username not found.
+2025-07-29 19:53:30,718 - WARNING - Login failed: vamsi_kota not found.
+2025-07-29 19:54:03,139 - WARNING - Login failed: vamsikota not found.
+2025-07-29 19:54:59,019 - WARNING - Login failed: vamsikota not found.
+2025-07-29 19:59:35,201 - WARNING - Login failed: vamsikota not found.
+2025-07-29 20:35:17,034 - INFO - Received registration request for venky@gmail.com,7437542301
+2025-07-29 20:35:17,421 - WARNING - Duplicate registration attempt: venky@gmail.com or 7437542301
+2025-07-29 20:36:38,190 - INFO - Received registration request for vamsi@gmail.com,9989103545
+2025-07-29 20:36:38,468 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\SVCS\anaconda3\envs\Python_3.13\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-07-29 20:36:39,351 - INFO - User vamsi@gmail.com,9989103545 registered successfully.
+2025-07-29 20:36:39,351 - INFO - register_user executed in 1161 ms
+2025-07-29 20:39:18,877 - INFO - User vamsi@gmail.com logged in successfully.
+2025-07-29 20:39:18,877 - INFO - login executed in 599 ms
+2025-07-29 20:41:03,766 - INFO - [ResetToken] Sent to vamsi@gmail.com (valid 24h): FiCTzG-NJNtxesDndCoKEOi4b6UVguQ0_MphbtwMzB4
+2025-07-29 20:41:03,767 - INFO - forgot_password executed in 982 ms
+2025-07-29 20:43:33,981 - INFO - User vamsi@gmail.com logged in successfully.
+2025-07-29 20:43:33,982 - INFO - login executed in 585 ms
+2025-07-29 20:47:28,846 - INFO - User vamsi@gmail.com logged in successfully.
+2025-07-29 20:47:28,846 - INFO - login executed in 781 ms
+2025-07-29 20:51:28,205 - INFO - User vamsi@gmail.com logged in successfully.
+2025-07-29 20:51:28,205 - INFO - login executed in 2318 ms
+2025-07-29 20:53:47,003 - INFO - Received registration request for priya@gmail.com,8790316555
+2025-07-29 20:53:48,206 - INFO - User priya@gmail.com,8790316555 registered successfully.
+2025-07-29 20:53:48,206 - INFO - register_user executed in 1202 ms
+2025-07-29 20:54:51,804 - WARNING - Login failed: Incorrect password for priya@gmail.com
+2025-07-29 20:55:06,035 - WARNING - Login failed: Incorrect password for priya@gmail.com
+2025-07-29 20:55:18,775 - WARNING - Login failed: Incorrect password for priya@gmail.com
+2025-07-29 20:55:28,234 - INFO - User priya@gmail.com logged in successfully.
+2025-07-29 20:55:28,234 - INFO - login executed in 879 ms
+2025-07-29 20:57:30,168 - INFO - logout_user executed in 0 ms
+2025-07-29 20:59:49,761 - INFO - User priya@gmail.com logged in successfully.
+2025-07-29 20:59:49,761 - INFO - login executed in 1175 ms
+2025-07-29 21:01:32,864 - INFO - User priya@gmail.com logged in successfully.
+2025-07-29 21:01:32,864 - INFO - login executed in 999 ms
+2025-07-29 21:02:26,423 - INFO - User 6888e7839662fb2073502295 requested contact update
+2025-07-29 21:02:26,424 - INFO - Checking for existing mobile: 8790316555
+2025-07-29 21:02:27,039 - INFO - User 6888e7839662fb2073502295 updated contact: {'mobile': '8790316555'}
+2025-07-29 21:02:27,039 - INFO - change_contact executed in 616 ms
