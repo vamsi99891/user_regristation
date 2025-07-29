@@ -1,0 +1,78 @@
+2025-07-29 17:05:29,799 - ERROR - Future exception was never retrieved
+future: <Future finished exception=OperationFailure("bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}")>
+Traceback (most recent call last):
+  File "C:\Users\SVCS\anaconda3\envs\Python_3.13\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\SVCS\anaconda3\envs\Python_3.13\Lib\site-packages\pymongo\synchronous\collection.py", line 2378, in create_index
+    return (self._create_indexes([index], session, **cmd_options))[0]
+            ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SVCS\anaconda3\envs\Python_3.13\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\SVCS\anaconda3\envs\Python_3.13\Lib\site-packages\pymongo\synchronous\collection.py", line 2231, in _create_indexes
+    with self._conn_for_writes(session, operation=_Op.CREATE_INDEXES) as conn:
+         ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SVCS\anaconda3\envs\Python_3.13\Lib\contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "C:\Users\SVCS\anaconda3\envs\Python_3.13\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1756, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+         ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SVCS\anaconda3\envs\Python_3.13\Lib\contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "C:\Users\SVCS\anaconda3\envs\Python_3.13\Lib\site-packages\pymongo\synchronous\pool.py", line 1119, in checkout
+    conn = self._get_conn(checkout_started_time, handler=handler)
+  File "C:\Users\SVCS\anaconda3\envs\Python_3.13\Lib\site-packages\pymongo\synchronous\pool.py", line 1281, in _get_conn
+    conn = self.connect(handler=handler)
+  File "C:\Users\SVCS\anaconda3\envs\Python_3.13\Lib\site-packages\pymongo\synchronous\pool.py", line 1073, in connect
+    conn.authenticate()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\SVCS\anaconda3\envs\Python_3.13\Lib\site-packages\pymongo\synchronous\pool.py", line 526, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SVCS\anaconda3\envs\Python_3.13\Lib\site-packages\pymongo\synchronous\auth.py", line 450, in authenticate
+    auth_func(credentials, conn)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SVCS\anaconda3\envs\Python_3.13\Lib\site-packages\pymongo\synchronous\auth.py", line 355, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+  File "C:\Users\SVCS\anaconda3\envs\Python_3.13\Lib\site-packages\pymongo\synchronous\auth.py", line 135, in _authenticate_scram
+    res = conn.command(source, cmd)
+  File "C:\Users\SVCS\anaconda3\envs\Python_3.13\Lib\site-packages\pymongo\synchronous\helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\SVCS\anaconda3\envs\Python_3.13\Lib\site-packages\pymongo\synchronous\pool.py", line 414, in command
+    return command(
+        self,
+    ...<20 lines>...
+        write_concern=write_concern,
+    )
+  File "C:\Users\SVCS\anaconda3\envs\Python_3.13\Lib\site-packages\pymongo\synchronous\network.py", line 212, in command
+    helpers_shared._check_command_response(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        response_doc,
+        ^^^^^^^^^^^^^
+    ...<2 lines>...
+        parse_write_concern_error=parse_write_concern_error,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\SVCS\anaconda3\envs\Python_3.13\Lib\site-packages\pymongo\helpers_shared.py", line 250, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}
+2025-07-29 17:08:14,533 - INFO - Received registration request for venky@gmail.com,7437542301
+2025-07-29 17:08:50,020 - INFO - Received registration request for venky@gmail.com,7437542301
+2025-07-29 17:09:43,698 - INFO - Received registration request for venky@gmail.com,7437542301
+2025-07-29 17:12:03,827 - INFO - Received registration request for venky@gmail.com,7437542301
+2025-07-29 17:12:04,006 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\SVCS\anaconda3\envs\Python_3.13\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-07-29 17:12:04,562 - INFO - User venky@gmail.com,7437542301 registered successfully.
+2025-07-29 17:12:04,562 - INFO - register_user executed in 735 ms
+2025-07-29 17:17:37,571 - INFO - Received registration request for venky@gmail.com,7437542301
+2025-07-29 17:17:37,625 - WARNING - Duplicate registration attempt: venky@gmail.com or 7437542301
+2025-07-29 17:17:41,441 - INFO - Received registration request for venky@gmail.com,7437542301
+2025-07-29 17:17:41,497 - WARNING - Duplicate registration attempt: venky@gmail.com or 7437542301
+2025-07-29 17:17:43,416 - INFO - Received registration request for venky@gmail.com,7437542301
+2025-07-29 17:17:43,464 - WARNING - Duplicate registration attempt: venky@gmail.com or 7437542301
+2025-07-29 17:20:46,486 - INFO - Received registration request for vamsi@gmail.com,7437542301
+2025-07-29 17:20:46,538 - WARNING - Duplicate registration attempt: vamsi@gmail.com or 7437542301
