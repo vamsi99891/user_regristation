@@ -1,0 +1,66 @@
+# User Registration Module
+
+# Backend API - Using Python, FastAPI, Pydantic, Logging
+
+# Mongo Db, 
+
+# MySQL
+
+# User Logger
+
+# Models - Req and Response
+
+# Customer Classes for Exception Handling
+
+# Logger will be used to Log the data in a Log file.
+
+# Lambda - Where Possible
+
+# Decorators
+
+# Postman Collection
+ 
+# Response Time - Login API - {Execution Time : 3 ms}
+ 
+ 
+# 1. Write an Fast API which will allow user to
+ 
+# User will have Email Address  or Phone Number as Username, Cannot be Empty
+
+# Password : Min 8 Chars Max 20. Cap, Small, Special Chars, Number. Cannot be Reused.
+
+# Ameet$786, Ameet$786 -> Not Allowed, User Must Change Password After Every Month.
+
+# Login -> Force user to change and Relogin.
+ 
+2. JWT Tokens
+ 
+3. Register will have 
+
+1. Username as Email or Cell Numbers
+
+2. First Name, LastName, DOB, DOJ, Address, Comment, Active
+
+3. Do not allow duplicate Email or Cell Number to Register.
+ 
+# Change Password - User Should be Logged in. Manish. will be able to change his own password.
+ 
+# Forget Password : Forget password will send email to user. with Link valid for 24 hours only.
+ 
+# User can request only 3 request to change Password.
+ 
+# Logout - Logout User. JWT is destroyed.
+ 
+1. Login 
+
+2. Register
+
+2.1 Change Email or Phone Number
+
+3. Change Password
+
+4. Forget Password
+
+5. Logout
+
+ 
